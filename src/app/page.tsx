@@ -11,6 +11,7 @@ import { ScrollButton } from "@/components/ui/scroll-button"
 import { LinearBlur } from "progressive-blur";
 import ModelSelector from "@/components/ModelSelector"
 import { Plus } from "lucide-react"
+import { ModeToggle } from "@/components/ThemeSwitcher"
 
 
 export default function Chat() {
@@ -39,9 +40,12 @@ export default function Chat() {
                 onModelChange={setSelectedModel}
               /> */}
             </div>
-            <button onClick={() => setMessages([])} className="">
-              <Plus className="size-5 opacity-70" />
-            </button>
+            <div className="flex gap-4 items-center">
+              <button onClick={() => setMessages([])} className="">
+                <Plus className="size-5 opacity-70" />
+              </button>
+              <ModeToggle />
+            </div>
           </div>
           {/* <LinearBlur
             className="absolute top-0 left-0 w-full h-32"

@@ -80,7 +80,7 @@ function PromptInputWithActions({ value, onValueChange, isLoading, onSubmit }: P
         </div>
       )}
 
-      <PromptInputTextarea placeholder="Ask me anything..." />
+      <PromptInputTextarea placeholder="Ask me anything..." className="dark:bg-transparent" />
 
       <PromptInputActions className="flex items-center justify-between gap-2 pt-2">
         <PromptInputAction tooltip="Attach files">
